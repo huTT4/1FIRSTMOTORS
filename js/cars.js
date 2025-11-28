@@ -165,7 +165,7 @@ CarPlay / Android Auto<br>
       availability: '',
       isNew: true,
       discount: 0,
-      isSold: true,
+      isSold: false,
 
       mainImg: 'img/cars/1.jpg',
       title: 'Mercedes GL350',
