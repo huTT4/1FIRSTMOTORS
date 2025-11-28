@@ -189,10 +189,10 @@ function renderCars(lang) {
           </div>
 
           <div class="catalog__card-info">
-            <span><img src="img/calendar-2.png" alt="calendar-2">${car.year}</span>
-            <span><img src="img/transmission-2.png" alt="transmission-2">${car.transmission}</span>
-            <span><img src="img/speedometer-2.png" alt="speedometer-2">${car.mileage.toLocaleString('ru-RU')}</span>
-            <span><img src="img/engine.png" alt="engine">${car.engine}</span>
+            <span><img src="img/calendar-2.svg" alt="calendar-2">${car.year}</span>
+            <span><img src="img/transmission-2.svg" alt="transmission-2">${car.transmission}</span>
+            <span><img src="img/speedometer-2.svg" alt="speedometer-2">${car.mileage.toLocaleString('ru-RU')}</span>
+            <span><img src="img/engine.svg" alt="engine">${car.engine}</span>
           </div>
 
           ${car.isSold ? `<div class="catalog__card-price">
