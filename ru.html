@@ -167,13 +167,12 @@
       </div>
     </section>
 
-    <!-- <section class="catalog" id="catalog">
+    <section class="catalog" id="catalog">
       <div class="container">
         <div class="catalog__top">
           <div class="catalog__title-wrapper">
-            <h3 class="catalog__title">Авто каталог</h3>
+            <h3 class="catalog__title"><span>Авто</span> каталог</h3>
             <div class="catalog__found">
-              <span class="catalog__found-circle"></span>
               Найдено <span data-quantity></span> авто
             </div>
           </div>
@@ -183,31 +182,20 @@
               <img src="img/search.svg" alt="search">
             </button>
           </div>
-          <ul class="catalog__filter-cards">
-            <li data-filter="all">Все</li>
-            <li data-filter="new">Новые</li>
-            <li data-filter="discount">Со скидкой</li>
-            <li data-filter="sold">Продано</li>
-          </ul>
         </div>
 
         <div class="catalog__inner">
           <aside class="catalog__left">
             <div class="catalog__filters">
-              <h4 class="catalog__filters-title">
-                <img src="img/settings.svg" alt="settings">
-                Фильтры
-              </h4>
-
-              <div class="catalog__brand">
-                <h5 class="catalog__brand-title">
-                  <img src="img/car.svg" alt="car">
+              <div class="catalog__item">
+                <h5 class="catalog__item-title">
+                  <img src="img/car.png" alt="car">
                   Марка
                 </h5>
 
                 <div class="catalog__select">
                   <div class="catalog__select-top">
-                    <span class="catalog__brand-choise">Все</span>
+                    <span>Все</span>
                     <img src="img/arrow.svg" alt="arrow">
                   </div>
                   <ul class="catalog__select-list">
@@ -289,165 +277,161 @@
                 </div>
               </div>
 
-              <div class="catalog__range">
-                <h5 class="catalog__range-title">
-                  <img src="img/calendar-1.svg" alt="calendar-1">
+              <div class="catalog__item">
+                <h5 class="catalog__item-title">
+                  <img src="img/calendar-1.png" alt="calendar-1">
                   Год выпуска
                 </h5>
-                <div class="catalog__range-inputs">
-                  <input type="number" id="minInputRange--year" value="2006">
-                  <input type="number" id="maxInputRange--year" value="2023">
-                </div>
-                <div class="catalog__range-slider">
-                  <div class="catalog__range-progress catalog__range-progress--year"></div>
-                </div>
-                <div class="catalog__range-input">
-                  <input type="range" id="rangeMin--year" min="2006" max="2023" value="2006">
-                  <input type="range" id="rangeMax--year" min="2006" max="2023" value="2023">
-                </div>
-              </div>
 
-              <div class="catalog__range">
-                <h5 class="catalog__range-title">
-                  <img src="img/price.svg" alt="price">
-                  Цена
-                </h5>
-                <div class="catalog__range-inputs">
-                  от
-                  <input type="number" id="minInputRange--price" value="3590">
+                <div class="catalog__range">
+                  <input type="number" min="1920" max="2025" value="1920">
                   до
-                  <input type="number" id="maxInputRange--price" value="64990">
-                </div>
-                <div class="catalog__range-slider">
-                  <div class="catalog__range-progress catalog__range-progress--price"></div>
-                </div>
-                <div class="catalog__range-input">
-                  <input type="range" id="rangeMin--price" min="3590" max="64990" value="3590">
-                  <input type="range" id="rangeMax--price" min="3590" max="64990" value="64990">
+                  <input type="number" min="1920" max="2025" value="2025">
                 </div>
               </div>
 
-              <div class="catalog__select">
-                <div class="catalog__select-top catalog__select-top--other">
+              <div class="catalog__item">
+                <h5 class="catalog__item-title">
+                  <img src="img/speedometer-1.png" alt="speedometer-1">
                   Пробег
-                  <img src="img/arrow.svg" alt="arrow">
+                </h5>
+
+                <div class="catalog__range">
+                  <input type="number" min="1920" max="2025" value="1920">
+                  до
+                  <input type="number" min="1920" max="2025" value="2025">
                 </div>
-                <ul class="catalog__select-list">
-                  <label>
-                    <input type="checkbox" name="mileage" value="100000">
-                    <span>до 100 000 км</span>
-                  </label>
-
-                  <label>
-                    <input type="checkbox" name="mileage" value="150000">
-                    <span>до 150 000 км</span>
-                  </label>
-
-                  <label>
-                    <input type="checkbox" name="mileage" value="200000">
-                    <span>до 200 000 км</span>
-                  </label>
-
-                  <label>
-                    <input type="checkbox" name="mileage" value="250000">
-                    <span>до 250 000 км</span>
-                  </label>
-
-                  <label>
-                    <input type="checkbox" name="mileage" value="more250k">
-                    <span>больше 250 000 км</span>
-                  </label>
-                </ul>
               </div>
 
-              <div class="catalog__select">
-                <div class="catalog__select-top catalog__select-top--other">
+              <div class="catalog__item">
+                <h5 class="catalog__item-title">
+                  <img src="img/speedometer-1.png" alt="speedometer-1">
                   Вид топлива
-                  <img src="img/arrow.svg" alt="arrow">
-                </div>
-                <ul class="catalog__select-list">
+                </h5>
+
+                <ul class="catalog__choice">
                   <label>
-                    <input type="checkbox" name="fuel" value="Бензин">
+                    <input type="checkbox" name="fuel" value="benzin">
                     <span>Бензин</span>
                   </label>
 
                   <label>
-                    <input type="checkbox" name="fuel" value="Дизель">
+                    <input type="checkbox" name="fuel" value="dizel">
                     <span>Дизель</span>
                   </label>
 
                   <label>
-                    <input type="checkbox" name="fuel" value="Другое">
-                    <span>Другое</span>
+                    <input type="checkbox" name="fuel" value="hybrid">
+                    <span>Гибрид</span>
+                  </label>
+
+                  <label>
+                    <input type="checkbox" name="fuel" value="electro">
+                    <span>Электро</span>
                   </label>
                 </ul>
               </div>
 
-              <div class="catalog__select">
-                <div class="catalog__select-top catalog__select-top--other">
-                  Коробка передач
-                  <img src="img/arrow.svg" alt="arrow">
+              <div class="catalog__item">
+                <h5 class="catalog__item-title">
+                  <img src="img/car.png" alt="car">
+                  Модель
+                </h5>
+
+                <div class="catalog__select">
+                  <div class="catalog__select-top">
+                    <span>Все</span>
+                    <img src="img/arrow.svg" alt="arrow">
+                  </div>
+                  <ul class="catalog__select-list">
+                    <label>
+                      <input type="radio" name="model" value="bmw e46">
+                      <span>BMW e46</span>
+                    </label>
+
+                    <label>
+                      <input type="radio" name="model" value="all" checked>
+                      <span>Все</span>
+                    </label>
+                  </ul>
                 </div>
-                <ul class="catalog__select-list">
+              </div>
+
+              <div class="catalog__item">
+                <h5 class="catalog__item-title">
+                  <img src="img/price.png" alt="price">
+                  Цена
+                  <span>Евро</span>
+                </h5>
+
+                <div class="catalog__range">
+                  <input type="number" min="3000000" max="8000000" value="3000000">
+                  до
+                  <input type="number" min="3000000" max="8000000" value="8000000">
+                </div>
+              </div>
+
+              <div class="catalog__item">
+                <h5 class="catalog__item-title">
+                  <img src="img/transmission-1.png" alt="transmission-1">
+                  КПП
+                </h5>
+
+                <ul class="catalog__choice">
                   <label>
-                    <input type="checkbox" name="transmission" value="Автомат">
+                    <input type="checkbox" name="transmission" value="mechanical">
+                    <span>Механика</span>
+                  </label>
+
+                  <label>
+                    <input type="checkbox" name="transmission" value="automatic">
                     <span>Автомат</span>
                   </label>
-
-                  <label>
-                    <input type="checkbox" name="transmission" value="Механическая">
-                    <span>Механическая</span>
-                  </label>
                 </ul>
               </div>
 
-              <div class="catalog__select">
-                <div class="catalog__select-top catalog__select-top--other">
+              <div class="catalog__item">
+                <h5 class="catalog__item-title">
+                  <img src="img/speedometer-1.png" alt="speedometer-1">
                   Доступность
-                  <img src="img/arrow.svg" alt="arrow">
-                </div>
-                <ul class="catalog__select-list">
+                </h5>
+
+                <ul class="catalog__choice">
                   <label>
-                    <input type="checkbox" name="availability" value="В наличии">
+                    <input type="checkbox" name="availability" value="stock">
                     <span>В наличии</span>
                   </label>
 
                   <label>
-                    <input type="checkbox" name="availability" value="Скоро">
-                    <span>Скоро</span>
+                    <input type="checkbox" name="availability" value="soon">
+                    <span>Скоро будет</span>
                   </label>
 
                   <label>
-                    <input type="checkbox" name="availability" value="Под заказ">
-                    <span>Под заказ</span>
+                    <input type="checkbox" name="availability" value="order">
+                    <span>По заказу</span>
                   </label>
                 </ul>
               </div>
             </div>
 
-            <button class="catalog__filters-btn" id="clear-filters">Сбросить фильтры</button>
-
-            <a href="https://bpauto.lv/ru/" target="_blank" rel="noopener">
-              <img class="banner-img" src="img/banners/banner-bpauto-ru.webp"
-                alt="Проверка авто перед покупкой — Bp Auto">
-            </a>
+            <div class="catalog__filters-btns">
+              <button class="catalog__filters-btn" id="show-filters">Показать 34 автомобиля</button>
+              <button class="catalog__filters-btn catalog__filters-btn--clear" disabled id="clear-filters">Сбросить
+                фильтры</button>
+            </div>
           </aside>
 
           <div class="catalog__right">
             <div class="catalog__cards"></div>
 
             <button class="catalog__show">показать еще</button>
-
-            <a href="https://bpauto.lv/ru/" target="_blank" rel="noopener">
-              <img class="banner-img-mobile" src="img/banners/banner-bpauto-ru.webp"
-                alt="Проверка авто перед покупкой — Bp Auto">
-            </a>
           </div>
         </div>
       </div>
     </section>
 
-    <section class="form" id="lizing">
+    <!-- <section class="form" id="lizing">
       <div class="form__wrapper">
         <div class="container">
           <div class="form__inner">

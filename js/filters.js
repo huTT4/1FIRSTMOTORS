@@ -40,40 +40,40 @@ let minGap = 1
 const minYear = 2006
 const maxYear = 2023
 
-function updateProgressYear() {
-  let minVal = parseInt(rangeMinYear.value)
-  let maxVal = parseInt(rangeMaxYear.value)
+// function updateProgressYear() {
+//   let minVal = parseInt(rangeMinYear.value)
+//   let maxVal = parseInt(rangeMaxYear.value)
 
-  progressYear.style.left = ((minVal - minYear) / (maxYear - minYear)) * 100 + "%"
-  progressYear.style.right = 100 - ((maxVal - minYear) / (maxYear - minYear)) * 100 + "%"
+//   progressYear.style.left = ((minVal - minYear) / (maxYear - minYear)) * 100 + "%"
+//   progressYear.style.right = 100 - ((maxVal - minYear) / (maxYear - minYear)) * 100 + "%"
 
-  minInputRangeYear.value = minVal
-  maxInputRangeYear.value = maxVal
-}
+//   minInputRangeYear.value = minVal
+//   maxInputRangeYear.value = maxVal
+// }
 
-rangeMinYear.addEventListener('input', () => {
-  if (parseInt(rangeMaxYear.value) - parseInt(rangeMinYear.value) <= minGap) {
-    rangeMinYear.value = parseInt(rangeMaxYear.value) - minGap
-  }
-})
+// rangeMinYear.addEventListener('input', () => {
+//   if (parseInt(rangeMaxYear.value) - parseInt(rangeMinYear.value) <= minGap) {
+//     rangeMinYear.value = parseInt(rangeMaxYear.value) - minGap
+//   }
+// })
 
-rangeMaxYear.addEventListener('input', () => {
-  if (parseInt(rangeMaxYear.value) - parseInt(rangeMinYear.value) <= minGap) {
-    rangeMaxYear.value = parseInt(rangeMinYear.value) + minGap
-  }
-})
+// rangeMaxYear.addEventListener('input', () => {
+//   if (parseInt(rangeMaxYear.value) - parseInt(rangeMinYear.value) <= minGap) {
+//     rangeMaxYear.value = parseInt(rangeMinYear.value) + minGap
+//   }
+// })
 
-minInputRangeYear.addEventListener('change', () => {
-  let val = parseInt(minInputRangeYear.value)
-  rangeMinYear.value = Math.max(minYear, Math.min(val, parseInt(rangeMaxYear.value) - minGap))
-})
+// minInputRangeYear.addEventListener('change', () => {
+//   let val = parseInt(minInputRangeYear.value)
+//   rangeMinYear.value = Math.max(minYear, Math.min(val, parseInt(rangeMaxYear.value) - minGap))
+// })
 
-maxInputRangeYear.addEventListener('change', () => {
-  let val = parseInt(maxInputRangeYear.value)
-  rangeMaxYear.value = Math.min(maxYear, Math.max(val, parseInt(rangeMinYear.value) + minGap))
-})
+// maxInputRangeYear.addEventListener('change', () => {
+//   let val = parseInt(maxInputRangeYear.value)
+//   rangeMaxYear.value = Math.min(maxYear, Math.max(val, parseInt(rangeMinYear.value) + minGap))
+// })
 
-updateProgressYear()
+// updateProgressYear()
 
 // ============================== Диапазон цены ==============================
 const rangeMinPrice = document.getElementById('rangeMin--price')
@@ -85,40 +85,40 @@ const progressPrice = document.querySelector('.catalog__range-progress--price')
 const minPrice = 3590
 const maxPrice = 64990
 
-function updateProgressPrice() {
-  let minVal = parseInt(rangeMinPrice.value)
-  let maxVal = parseInt(rangeMaxPrice.value)
+// function updateProgressPrice() {
+//   let minVal = parseInt(rangeMinPrice.value)
+//   let maxVal = parseInt(rangeMaxPrice.value)
 
-  progressPrice.style.left = ((minVal - minPrice) / (maxPrice - minPrice)) * 100 + "%"
-  progressPrice.style.right = 100 - ((maxVal - minPrice) / (maxPrice - minPrice)) * 100 + "%"
+//   progressPrice.style.left = ((minVal - minPrice) / (maxPrice - minPrice)) * 100 + "%"
+//   progressPrice.style.right = 100 - ((maxVal - minPrice) / (maxPrice - minPrice)) * 100 + "%"
 
-  minInputRangePrice.value = minVal
-  maxInputRangePrice.value = maxVal
-}
+//   minInputRangePrice.value = minVal
+//   maxInputRangePrice.value = maxVal
+// }
 
-rangeMinPrice.addEventListener('input', () => {
-  if (parseInt(rangeMaxPrice.value) - parseInt(rangeMinPrice.value) <= minGap) {
-    rangeMinPrice.value = parseInt(rangeMaxPrice.value) - minGap
-  }
-})
+// rangeMinPrice.addEventListener('input', () => {
+//   if (parseInt(rangeMaxPrice.value) - parseInt(rangeMinPrice.value) <= minGap) {
+//     rangeMinPrice.value = parseInt(rangeMaxPrice.value) - minGap
+//   }
+// })
 
-rangeMaxPrice.addEventListener('input', () => {
-  if (parseInt(rangeMaxPrice.value) - parseInt(rangeMinPrice.value) <= minGap) {
-    rangeMaxPrice.value = parseInt(rangeMinPrice.value) + minGap
-  }
-})
+// rangeMaxPrice.addEventListener('input', () => {
+//   if (parseInt(rangeMaxPrice.value) - parseInt(rangeMinPrice.value) <= minGap) {
+//     rangeMaxPrice.value = parseInt(rangeMinPrice.value) + minGap
+//   }
+// })
 
-minInputRangePrice.addEventListener('change', () => {
-  let val = parseInt(minInputRangePrice.value)
-  rangeMinPrice.value = Math.max(minPrice, Math.min(val, parseInt(rangeMaxPrice.value) - minGap))
-})
+// minInputRangePrice.addEventListener('change', () => {
+//   let val = parseInt(minInputRangePrice.value)
+//   rangeMinPrice.value = Math.max(minPrice, Math.min(val, parseInt(rangeMaxPrice.value) - minGap))
+// })
 
-maxInputRangePrice.addEventListener('change', () => {
-  let val = parseInt(maxInputRangePrice.value)
-  rangeMaxPrice.value = Math.min(maxPrice, Math.max(val, parseInt(rangeMinPrice.value) + minGap))
-})
+// maxInputRangePrice.addEventListener('change', () => {
+//   let val = parseInt(maxInputRangePrice.value)
+//   rangeMaxPrice.value = Math.min(maxPrice, Math.max(val, parseInt(rangeMinPrice.value) + minGap))
+// })
 
-updateProgressPrice()
+// updateProgressPrice()
 
 // ============================== Фильтрация ==============================
 const carsPerPage = 12 // количество карточек на странице
@@ -170,12 +170,11 @@ function renderCars(lang) {
 
             <div class="catalog__card-img-info">
               ${car.isSold ? `<span class="catalog__card-img-info-sold">SOLD</span>` : ''}
-              ${car.isNew ? `<span class="catalog__card-img-info-new">NEW</span>` : ''}
+              ${car.isNew ? `<span class="catalog__card-img-info-new">NEW!</span>` : ''}
               ${car.discount > 0 ? `<span class="catalog__card-img-info-discount">
-                <img src="img/percent.svg" alt="percent">-${car.discount}€
+                -${car.discount}€
               </span>` : ''}
               ${car.availability ? `<span class="catalog__card-img-info-availability">
-                <img src="img/check-mark.svg" alt="check-mark">
                 ${car.availability}
               </span>` : ''}
             </div>
@@ -183,15 +182,17 @@ function renderCars(lang) {
             <span class="catalog__card-img-article">${car.article}</span>
           </div>
 
+          <div class="catalog__card-info-wrapper">
+
           <div class="catalog__card-title">
             <h5>${car.title}</h5>
           </div>
 
           <div class="catalog__card-info">
-            <span><img src="img/calendar-2.svg" alt="calendar">${car.year}</span>
-            <span><img src="img/transmission.svg" alt="transmission">${car.transmission}</span>
-            <span><img src="img/speedometer.svg" alt="speedometer">${car.mileage.toLocaleString('ru-RU')}</span>
-            <span><img src="img/engine.svg" alt="engine">${car.engine}</span>
+            <span><img src="img/calendar-2.png" alt="calendar-2">${car.year}</span>
+            <span><img src="img/transmission-2.png" alt="transmission-2">${car.transmission}</span>
+            <span><img src="img/speedometer-2.png" alt="speedometer-2">${car.mileage.toLocaleString('ru-RU')}</span>
+            <span><img src="img/engine.png" alt="engine">${car.engine}</span>
           </div>
 
           ${car.isSold ? `<div class="catalog__card-price">
@@ -201,12 +202,14 @@ function renderCars(lang) {
               <span>${car.leasing}€/${currentLang === 'ru' ? 'мес' : currentLang === 'lv' ? 'mēnesī' : 'per month'}</span>
             </div>
           </div>` : `<div class="catalog__card-price">
-            <h6>${car.price}€</h6>
+            <h6>${car.price}<span> EUR</span></h6>
             <div>
               ${currentLang === 'ru' ? 'Лизинг от' : currentLang === 'lv' ? 'Līzings no' : 'Leasing from'}
               <span>${car.leasing}€/${currentLang === 'ru' ? 'мес' : currentLang === 'lv' ? 'mēnesī' : 'per month'}</span>
             </div>
           </div>`}
+
+          </div>
         </a>
       </div>
     `)
