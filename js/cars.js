@@ -9,7 +9,7 @@ const cars = {
       fuel: 'Другое',
       transmission: 'Автомат',
       availability: 'В наличии',
-      isNew: false,
+      isNew: true,
       discount: 0,
       isSold: false,
 
@@ -94,7 +94,7 @@ Keyless Go (бесключевой доступ и запуск)<br>
       fuel: 'Дизель',
       transmission: 'Автомат',
       availability: 'В наличии',
-      isNew: false,
+      isNew: true,
       discount: 0,
       isSold: false,
 
@@ -163,7 +163,7 @@ CarPlay / Android Auto<br>
       fuel: 'Дизель',
       transmission: 'Автомат',
       availability: '',
-      isNew: false,
+      isNew: true,
       discount: 0,
       isSold: true,
 

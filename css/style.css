@@ -974,6 +974,10 @@ body:has(.burger.active) {
   z-index: -1;
 }
 
+.catalog__card-img-info-new::before {
+  background: #1440cf !important;
+}
+
 .catalog__card-img-info-discount::before {
   background: #ff7332 !important;
 }
