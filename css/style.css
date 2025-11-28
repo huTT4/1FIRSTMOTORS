@@ -2790,8 +2790,8 @@ body:has(.burger.active) {
   /* ============================== HERO ============================== */
 
   .hero__title {
-  font-size: 41.25px;
-  margin-bottom: 9px;
+    font-size: 41.25px;
+    margin-bottom: 9px;
   }
 
   .hero__subtitle {
@@ -2805,7 +2805,7 @@ body:has(.burger.active) {
 
   .hero__btn-1 {
     font-size: 12px;
-    padding: 12.75px 12.75px 12.75px 35.25px;
+    padding: 10.25px 10.25px 10.25px 35.25px;
     gap: 13.5px;
     max-width: 170px;
   }
