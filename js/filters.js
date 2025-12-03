@@ -169,8 +169,8 @@ function renderCars(lang) {
             <img class="catalog__card-img" src="${car.mainImg}" alt="car-img">
 
             <div class="catalog__card-img-info">
-              ${car.isSold ? `<span class="catalog__card-img-info-sold">SOLD</span>` : ''}
-              ${car.isNew ? `<span class="catalog__card-img-info-new">NEW!</span>` : ''}
+              ${car.isSold ? `<span class="catalog__card-img-info-sold">${currentLang === 'lv' ? 'PĀRDOT' : 'SOLD!'}</span>` : ''}
+              ${car.isNew ? `<span class="catalog__card-img-info-new">${currentLang === 'lv' ? 'JAUNS!' : 'NEW!'}</span>` : ''}
               ${car.discount > 0 ? `<span class="catalog__card-img-info-discount">
                 -${car.discount}€
               </span>` : ''}
@@ -205,7 +205,7 @@ function renderCars(lang) {
             <h6>${car.price}<span> EUR</span></h6>
             <div>
               ${currentLang === 'ru' ? 'Лизинг от' : currentLang === 'lv' ? 'Līzings no' : 'Leasing from'}
-              <span>${car.leasing}€/${currentLang === 'ru' ? 'мес' : currentLang === 'lv' ? 'mēnesī' : 'per month'}</span>
+              <span>${car.leasing}€/${currentLang === 'ru' ? 'мес' : currentLang === 'lv' ? 'mēn' : 'month'}</span>
             </div>
           </div>`}
 
