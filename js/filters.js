@@ -175,7 +175,7 @@ function renderCars(lang) {
                 -${car.discount}€
               </span>` : ''}
               ${car.availability ? `<span class="catalog__card-img-info-availability">
-                ${car.availability}
+                ${currentLang === 'lv' ? 'PIEEJAMS' : currentLang === 'ru' ? 'В наличии' : 'In stock'}
               </span>` : ''}
             </div>
 
