@@ -161,7 +161,7 @@ body {
 
 .header__nav a,
 .lang,
-.header__lang-list-link,
+.lang__list-link,
 .header__personal a,
 .header__burger a {
   font-weight: 500;
@@ -199,6 +199,7 @@ body {
   padding: 10px;
   border-radius: 5px;
   top: 25px;
+  right: 0;
   z-index: 1;
   border: 1px solid #343434;
   display: flex;
@@ -370,7 +371,7 @@ body:has(.burger.active) {
 
   .header__nav a,
   .lang,
-  .header__lang-list-link,
+  .lang__list-link,
   .header__personal a,
   .header__content-text,
   .header__burger a {
@@ -392,7 +393,7 @@ body:has(.burger.active) {
 
   .header__nav a,
   .lang,
-  .header__lang-list-link,
+  .lang__list-link,
   .header__personal a,
   .header__burger a,
   .header__content-text {
@@ -2943,7 +2944,7 @@ body:has(.burger.active) {
 
   .header__nav a,
   .lang,
-  .header__lang-list-link,
+  .lang__list-link,
   .header__personal a {
     font-size: 12px;
   }
