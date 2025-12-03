@@ -1068,7 +1068,7 @@ body:has(.burger.active) {
   position: absolute;
   left: 50%;
   transform: translateX(-50%);
-  top: -12.5px;
+  top: -27.5px;
   display: flex;
   align-items: center;
   gap: 7px;
@@ -1313,6 +1313,18 @@ body:has(.burger.active) {
 
   .catalog__card {
     padding: 10px;
+  }
+
+  .catalog__card-img-info {
+    top: -22.5px;
+  }
+
+  .catalog__card-img-info span {
+    padding: 3px 10px;
+  }
+
+  .catalog__card-img-info span::before {
+    border-radius: 5px;
   }
 }
 
@@ -3131,7 +3143,7 @@ body:has(.burger.active) {
   }
 
   .catalog__card-img-info {
-    top: -9.375px;
+    top: -20.625px;
     gap: 5.25px;
   }
 
