@@ -1061,7 +1061,6 @@ body:has(.burger.active) {
   width: 100%;
   height: 100%;
   object-fit: fill;
-  border-radius: 8px 8px 0 0;
   display: block;
 }
 
@@ -1116,8 +1115,8 @@ body:has(.burger.active) {
   background: #ffa600 !important;
 }
 
-.catalog__card-info-wrapper {
-  padding: 0 26px 26px;
+.catalog__card {
+  padding: 15px;
 }
 
 .catalog__card-img-article {
@@ -1312,8 +1311,8 @@ body:has(.burger.active) {
     gap: 6px;
   }
 
-  .catalog__card-info-wrapper {
-    padding: 0 15px 15px;
+  .catalog__card {
+    padding: 10px;
   }
 }
 
@@ -3146,8 +3145,8 @@ body:has(.burger.active) {
     border-radius: 4.5px;
   }
 
-  .catalog__card-info-wrapper {
-    padding: 0 19.5px 19.5px;
+  .catalog__card {
+    padding: 11.25px;
   }
 
   .catalog__card-img-article {
