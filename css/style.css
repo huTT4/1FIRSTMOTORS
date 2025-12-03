@@ -413,7 +413,7 @@ body:has(.burger.active) {
   position: relative;
   top: 50%;
   transform: translateY(-50%);
-  max-width: 908px;
+  max-width: 750px;
 }
 
 .hero__title {
@@ -2990,7 +2990,7 @@ body:has(.burger.active) {
   }
 
   .hero__content {
-    max-width: 600px;
+    max-width: 562.5px;
   }
 
   /* ============================== CATALOG ============================== */
