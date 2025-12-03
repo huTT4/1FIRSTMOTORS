@@ -12,7 +12,7 @@ const cars = {
       isNew: true,
       discount: 0,
       isSold: false,
-
+      // TODO: вернуть абсолютные пути
       mainImg: 'img/cars/3.jpg',
       title: 'Kia Sorento',
       article: 'MZ-003',
