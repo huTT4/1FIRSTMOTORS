@@ -836,7 +836,7 @@ body:has(.burger.active) {
 }
 
 .catalog__item-title img {
-  width: 17px;
+  width: 19px;
 }
 
 .catalog__select {
@@ -3070,7 +3070,7 @@ body:has(.burger.active) {
   }
 
   .catalog__item-title img {
-    width: 12.75px;
+    width: 14.25px;
   }
 
   .catalog__select {
