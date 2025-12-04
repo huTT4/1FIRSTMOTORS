@@ -3628,7 +3628,7 @@ body:has(.burger.active) {
 /* ============================================= ABOUT POPUP ============================================= */
 
 .about-popup__overlay {
-  backdrop-filter: blur(5px);
+  background: rgb(0, 0, 0, .75);
   position: fixed;
   z-index: 99998;
   width: 100vw;
@@ -3653,6 +3653,8 @@ body:has(.burger.active) {
   flex-direction: column;
   gap: 20px;
   height: auto;
+  max-height: 90vh;
+  overflow-y: auto;
 }
 
 .about-popup__close {
@@ -3744,5 +3746,11 @@ body:has(.about-popup.active) {
 
   .about-popup__text {
     gap: 8px;
+  }
+}
+
+@media (max-width: 420px) {
+  .about-popup__content {
+    padding: 20px;
   }
 }
