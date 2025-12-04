@@ -3672,6 +3672,11 @@ body:has(.burger.active) {
   background: transparent;
   width: 23px;
   height: 23px;
+  transition: .15s;
+}
+
+.about-popup__close:hover {
+  transform: scale(1.15);
 }
 
 .about-popup__close img {
