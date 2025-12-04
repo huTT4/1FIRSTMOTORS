@@ -57,6 +57,35 @@
     <img src="img/arrow-to-top.png" alt="arrow-to-top">
   </button>
 
+  <!-- About Popup -->
+  <div class="about-popup" role="dialog" aria-modal="true">
+    <div class="about-popup__overlay"></div>
+    <div class="about-popup__content container">
+      <button class="about-popup__close">
+        <img src="img/popup-close.png" alt="Закрыть попап">
+      </button>
+      <img src="img/pop-up-about-img.png" alt="">
+      <div class="about-popup__text">
+        <h2>Par mums</h2>
+        <p>FirstMotors ir mūsdienīgs auto salons, kas piedāvā rūpīgi pārbaudītas Eiropas automašīnas ar caurspīdīgu
+          vēsturi un izdevīgiem iegādes nosacījumiem.</p>
+        <p>Mēs piedāvājam:</p>
+        <ul>
+          <li>• plašu automašīnu klāstu uz vietas;</li>
+          <li>• jebkuras markas un modeļa piemeklēšanu pēc individuāla pasūtījuma no Eiropas;</li>
+          <li>• godīgu un izdevīgu trade-in — jūsu auto kā daļa no maksājuma par jauno;</li>
+          <li>• finansējumu un līzingu sadarbībā ar uzticamiem partneriem;</li>
+          <li>• pilnu darījuma nodrošinājumu: diagnostiku, piegādi un dokumentu noformēšanu;</li>
+          <li>• jūsu automašīnas pārdošanu mūsu platformā profesionālos un godīgos nosacījumos.</li>
+        </ul>
+        <p>Mēs strādājam priekš tiem, kuri novērtē kvalitāti, ātrumu un drošību katrā darījuma posmā.<br>
+          Mums nav slēptu noteikumu — tikai godīgas cenas, reālas automašīnas un profesionāla attieksme.</p>
+        <p>Laipni lūdzam vietā, kur automašīnas tiek izvēlētas tikpat pārdomāti kā dzīves stils.</p>
+        <p>Laipni lūdzam FirstMotors.</p>
+      </div>
+    </div>
+  </div>
+
   <header class="header">
     <div class="container">
       <div class="header__inner">
@@ -552,6 +581,94 @@
             <div class="catalog__cards"></div>
 
             <button class="catalog__show">Rādīt vēl</button>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="lizing" id="lizing">
+      <div class="container">
+        <div class="lizing__title-block">
+          <h2>Auto <span>kredīts</span></h2>
+          <p>Auto kredīts lietota auto iegādei!</p>
+        </div>
+
+        <div class="lizing__inner">
+          <div class="lizing__func">
+            <h3 class="lizing__func-title">Piesakies un saņem personalizētus kredīta piedāvājumus</h3>
+
+            <div class="lizing__calc">
+              <div class="lizing__calc-block">
+                <div class="lizing__calc-block-top">
+                  <span class="lizing__calc-title">Nepieciešama summa</span>
+                  <span class="lizing__calc-num"><span data-range-num>11800</span> €</span>
+                </div>
+                <input class="lizing__calc-range" type="range" min="100" max="100000" value="50000" step="10">
+              </div>
+              <div class="lizing__calc-block">
+                <div class="lizing__calc-block-top">
+                  <span class="lizing__calc-title">Kredīta termiņš</span>
+                  <span class="lizing__calc-num"><span data-range-num>11800</span> mēn</span>
+                </div>
+                <input class="lizing__calc-range" type="range" min="12" max="84" value="42" step="12">
+              </div>
+              <div class="lizing__calc-end">
+                <span class="lizing__calc-title">Ikmēneša<br>maksājums</span>
+                <span class="lizing__calc-num"><span data-range-sum>11800</span> €</span>
+              </div>
+            </div>
+
+            <form class="lizing__form">
+              <div class="form__inputs">
+                <input type="text" placeholder="Vards/Uzvards" required>
+                <input type="tel" placeholder="Telefons" required>
+                <input type="email" placeholder="E-pasts" required>
+                <input type="number" placeholder="Pirmā iemaksa (€)" required>
+                <textarea placeholder="Jūsu komentārs"></textarea>
+              </div>
+              <label class="form__checkbox">
+                <input type="checkbox" required>
+                <span class="form__checkbox-checkmark">
+                  <img src="img/form-checkmark.svg" alt="form-checkmark">
+                </span>
+                Es piekrītu privātuma politikai un lietošanas noteikumiem
+              </label>
+              <button class="form__btn" type="submit">Pieteikties</button>
+            </form>
+          </div>
+
+          <div class="form__info">
+            <h3 class="form__info-title">Kā noformēt auto kredītu?</h3>
+            <ul class="form__info-list">
+              <li>
+                <div>
+                  <img src="img/form-1.svg" alt="">
+                  1. Izvēlieties auto
+                </div>
+                <p>Izvēlieties savu jauno automašīnu no plašā dažādu marku un modeļu klāsta.</p>
+              </li>
+              <li>
+                <div>
+                  <img src="img/form-2.svg" alt="">
+                  2. Aizpildiet pieteikumu
+                </div>
+                <p>Aizpildiet visu nepieciešamo informāciju par sevi un norādiet nepieciešamo aizdevuma summu.</p>
+              </li>
+              <li>
+                <div>
+                  <img src="img/form-3.svg" alt="">
+                  3. Parakstiet līgumu
+                </div>
+                <p>Parakstiet līgumu ar mums pēc labākā piedāvājuma saņemšanas.</p>
+              </li>
+              <li>
+                <div>
+                  <img src="img/form-4.svg" alt="">
+                  4. Reģistrējiet savu auto
+                </div>
+                <p>Reģistrējiet savu jauno auto CSDD un kļūstiet par tā īpašnieku.</p>
+              </li>
+            </ul>
           </div>
         </div>
       </div>

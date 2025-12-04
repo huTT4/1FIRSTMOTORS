@@ -1461,7 +1461,6 @@ body:has(.burger.active) {
 
 .lizing__inner {
   display: flex;
-  justify-content: space-between;
   gap: 80px;
 }
 
@@ -1723,6 +1722,7 @@ body:has(.burger.active) {
   font-weight: 400;
   font-size: 20px;
   color: #fff;
+  max-width: 550px;
 }
 
 @media ((min-width: 1100px) and (max-width: 1550px)) {
@@ -1870,6 +1870,7 @@ body:has(.burger.active) {
 
   .form__info-list li p {
     font-size: 15px;
+    max-width: 412.5px;
   }
 }
 
