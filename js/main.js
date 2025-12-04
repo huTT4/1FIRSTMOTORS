@@ -79,6 +79,54 @@ if (aboutPopup) {
   aboutPopupOverlay.addEventListener('click', closePopup)
 }
 
+// ============================== Логика в калькуляторе  ==============================
+const calcBlocks = document.querySelectorAll('.lizing__calc-block')
+const outputFinish = document.querySelector('[data-range-sum]')
+
+let amount = 0; // сумма кредита
+let term = 0; // срок (в месяцах)
+
+// Обновление итогового платежа
+function updateMonthlyPayment() {
+  if (!amount || !term) return
+
+  const r = 0.07
+  const monthlyRate = r / 12
+
+  const payment = (amount * monthlyRate) / (1 - Math.pow(1 + monthlyRate, -term))
+
+  outputFinish.textContent = payment.toFixed(2)
+}
+
+// Инициализация каждого блока
+calcBlocks.forEach(block => {
+  const range = block.querySelector('.lizing__calc-range')
+  const output = block.querySelector('[data-range-num]')
+
+  function update() {
+    // Обновляем число range
+    output.textContent = range.value
+
+    // Красим дорожку (заполненную часть)
+    const percent = (range.value - range.min) / (range.max - range.min) * 100;
+    range.style.setProperty('--pos', percent + '%');
+
+    // Передаем значения в общие переменные
+    if (range.max == '100000') {
+      amount = Number(range.value)
+    } else {
+      term = Number(range.value)
+    }
+
+    // Считаем итог
+    updateMonthlyPayment()
+  }
+
+  range.addEventListener('input', update)
+  update() // запуск при загрузке
+})
+
+
 // ============================== Валидация формы ==============================
 
 const lang = document.documentElement.getAttribute('lang')

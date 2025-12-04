@@ -199,7 +199,7 @@ function renderCars(lang) {
             <h6>${currentLang === 'ru' ? 'Продано' : currentLang === 'lv' ? 'Pārdots' : 'Sold'}</h6>
             <div class="hidden">
               ${currentLang === 'ru' ? 'Лизинг от' : currentLang === 'lv' ? 'Līzings no' : 'Leasing from'}
-              <span>${car.leasing}€/${currentLang === 'ru' ? 'мес' : currentLang === 'lv' ? 'mēnesī' : 'per month'}</span>
+              <span>${car.leasing}€/${currentLang === 'ru' ? 'мес' : currentLang === 'lv' ? 'mēn' : 'month'}</span>
             </div>
           </div>` : `<div class="catalog__card-price">
             <h6>${car.price}<span> EUR</span></h6>

@@ -1424,10 +1424,506 @@ body:has(.burger.active) {
   }
 }
 
+/* ============================================= LIZING ============================================= */
+/* ============================================= LIZING ============================================= */
+/* ============================================= LIZING ============================================= */
+
+.lizing {
+  padding: 60px 0;
+  background: url('../img/form-bg.jpg') no-repeat center / cover;
+}
+
+.lizing__title-block {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 10px;
+  margin-bottom: 50px;
+}
+
+.lizing__title-block h2 {
+  font-weight: 800;
+  font-size: 50px;
+  text-transform: uppercase;
+  color: #fff;
+}
+
+.lizing__title-block h2 span {
+  color: #ffb835;
+}
+
+.lizing__title-block p {
+  font-style: italic;
+  font-weight: 800;
+  font-size: 22px;
+  color: #fff;
+}
+
+.lizing__inner {
+  display: flex;
+  justify-content: space-between;
+  gap: 80px;
+}
+
+.lizing__func {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  padding: 30px;
+  background: #191919;
+  max-width: 582px;
+  border-radius: 25px;
+}
+
+.lizing__func-title {
+  font-weight: 700;
+  font-size: 30px;
+  color: #fff;
+}
+
+.lizing__calc {
+  display: flex;
+  flex-direction: column;
+  gap: 35px;
+}
+
+.lizing__calc-block {
+  display: flex;
+  flex-direction: column;
+  gap: 18px;
+}
+
+.lizing__calc-block-top,
+.lizing__calc-end {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.lizing__calc-title {
+  font-weight: 600;
+  font-size: 18px;
+  color: #fff;
+}
+
+.lizing__calc-num {
+  font-weight: 700;
+  font-size: 22px;
+  color: #fff;
+}
+
+.lizing__calc-end .lizing__calc-num {
+  border-radius: 10px;
+  background: rgba(255, 255, 255, 0.1);
+  display: flex;
+  align-items: center;
+  gap: 15px;
+  color: #999;
+  padding: 20px 10px 20px 24px;
+}
+
+.lizing__calc-end .lizing__calc-num span {
+  color: #fff;
+}
+
+.lizing__calc-range {
+  -webkit-appearance: none;
+  width: 100%;
+  height: 4px;
+  background: #fff;
+  outline: none;
+  border-radius: 4px;
+}
+
+.lizing__calc-range::-webkit-slider-runnable-track {
+  height: 4px;
+  border-radius: 4px;
+  background: linear-gradient(to right,
+      #ffb835 0%,
+      #ffb835 var(--pos),
+      #fff var(--pos),
+      #fff 100%);
+}
+
+.lizing__calc-range::-moz-range-track {
+  height: 4px;
+  border-radius: 4px;
+  background: #fff;
+}
+
+.lizing__calc-range::-webkit-slider-thumb {
+  -webkit-appearance: none;
+  width: 15px;
+  height: 15px;
+  border-radius: 100%;
+  background: #ffb835;
+  cursor: pointer;
+  margin-top: -5.5px;
+}
+
+.lizing__calc-range::-moz-range-thumb {
+  width: 15px;
+  height: 15px;
+  border-radius: 100%;
+  background: #ffb835;
+  cursor: pointer;
+}
+
+.lizing__form {
+  display: flex;
+  flex-direction: column;
+}
+
+.form__inputs {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  margin-bottom: 25px;
+}
+
+.form__inputs input,
+.form__inputs textarea {
+  font-weight: 400;
+  font-size: 16px;
+  color: #fff;
+  border: 1px solid rgba(0, 0, 0, 0.05);
+  border-radius: 10px;
+  width: 100%;
+  background: rgba(255, 255, 255, 0.1);
+  padding: 20px;
+  transition: .15s;
+  outline: none;
+}
+
+.form__inputs textarea {
+  resize: none;
+  height: 100px;
+}
+
+.form__inputs input::placeholder,
+.form__inputs textarea::placeholder {
+  color: #999;
+}
+
+.form__inputs input:focus,
+.form__inputs textarea:focus {
+  border-color: rgb(255, 184, 53, 0.5);
+}
+
+.form__checkbox {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+  font-weight: 400;
+  font-size: 16px;
+  color: #fff;
+  position: relative;
+  cursor: pointer;
+  margin-bottom: 20px;
+}
+
+.form__checkbox input {
+  position: absolute;
+  opacity: 0;
+  cursor: pointer;
+}
+
+.form__checkbox-checkmark {
+  position: relative;
+  display: inline-block;
+  width: 21px;
+  height: 21px;
+  border: 2px solid #fff;
+}
+
+.form__checkbox-checkmark img {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%) scale(0);
+  z-index: 1;
+  width: 100%;
+  opacity: 0;
+  transition: .15s;
+}
+
+.form__checkbox input:checked~.form__checkbox-checkmark img {
+  opacity: 1;
+  transform: translate(-50%, -50%) scale(1);
+}
+
+.form__checkbox:hover .form__checkbox-checkmark img {
+  opacity: 1;
+  transform: translate(-50%, -50%) scale(.5);
+}
+
+.form__btn {
+  font-weight: 600;
+  font-size: 17px;
+  color: #fff;
+  border: 1px solid rgba(0, 0, 0, 0.05);
+  border-radius: 10px;
+  padding: 25px;
+  box-shadow: 0 3px 6px 0 rgba(252, 163, 66, 0.1), 0 11px 11px 0 rgba(252, 163, 66, 0.09), 0 25px 15px 0 rgba(252, 163, 66, 0.05), 0 45px 18px 0 rgba(252, 163, 66, 0.01), 0 70px 20px 0 rgba(252, 163, 66, 0);
+  background: #ffb835;
+  cursor: pointer;
+  transition: .15s;
+}
+
+.form__btn:hover {
+  background: #ffb326;
+  transform: translateY(-3px);
+}
+
+.form__btn:active {
+  transform: scale(.95);
+}
+
+.form__info {
+  padding-top: 30px;
+  display: flex;
+  flex-direction: column;
+  gap: 40px;
+}
+
+.form__info-title {
+  font-weight: 700;
+  font-size: 25px;
+  color: #fff;
+  border-bottom: 2px solid #ffb835;
+  width: fit-content;
+}
+
+.form__info-list {
+  display: flex;
+  flex-direction: column;
+  gap: 50px;
+}
+
+.form__info-list li {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+.form__info-list li div {
+  display: flex;
+  align-items: center;
+  gap: 11px;
+  font-weight: 700;
+  font-size: 28px;
+  color: #fff;
+}
+
+.form__info-list li div img {
+  width: 30px;
+}
+
+.form__info-list li p {
+  font-weight: 400;
+  font-size: 20px;
+  color: #fff;
+}
+
+@media ((min-width: 1100px) and (max-width: 1550px)) {
+  .lizing {
+    padding: 45px 0;
+  }
+
+  .lizing__title-block {
+    gap: 7.5px;
+    margin-bottom: 37.5px;
+  }
+
+  .lizing__title-block h2 {
+    font-size: 37.5px;
+  }
+
+  .lizing__title-block p {
+    font-size: 16.5px;
+  }
+
+  .lizing__inner {
+    gap: 60px;
+  }
+
+  .lizing__func {
+    gap: 15px;
+    padding: 22.5px;
+    max-width: 436.5px;
+    border-radius: 18.75px;
+  }
+
+  .lizing__func-title {
+    font-size: 22.5px;
+  }
+
+  .lizing__calc {
+    gap: 26.25px;
+  }
+
+  .lizing__calc-block {
+    gap: 13.5px;
+  }
+
+  .lizing__calc-title {
+    font-size: 13.5px;
+  }
+
+  .lizing__calc-num {
+    font-size: 16.5px;
+  }
+
+  .lizing__calc-end .lizing__calc-num {
+    border-radius: 7.5px;
+    gap: 11.25px;
+    padding: 15px 7.5px 15px 18px;
+  }
+
+  .lizing__calc-range {
+    height: 3px;
+    border-radius: 3px;
+  }
+
+  .lizing__calc-range::-webkit-slider-runnable-track {
+    height: 3px;
+    border-radius: 3px;
+  }
+
+  .lizing__calc-range::-moz-range-track {
+    height: 3px;
+    border-radius: 3px;
+  }
+
+  .lizing__calc-range::-webkit-slider-thumb {
+    width: 11.25px;
+    height: 11.25px;
+    margin-top: -4.125px;
+  }
+
+  .lizing__calc-range::-moz-range-thumb {
+    width: 11.25px;
+    height: 11.25px;
+    border-radius: 100%;
+  }
+
+  .form__inputs {
+    gap: 7.5px;
+    margin-bottom: 18.75px;
+  }
+
+  .form__inputs input,
+  .form__inputs textarea {
+    font-size: 12px;
+    border-radius: 7.5px;
+    padding: 15px;
+  }
+
+  .form__inputs textarea {
+    height: 75px;
+  }
+
+  .form__checkbox {
+    gap: 11.25px;
+    font-size: 12px;
+    margin-bottom: 15px;
+  }
+
+  .form__checkbox-checkmark {
+    width: 15.75px;
+    height: 15.75px;
+    border-width: 1.5px;
+  }
+
+  .form__btn {
+    font-size: 12.75px;
+    border-radius: 7.5px;
+    padding: 18.5px;
+  }
+
+  .form__info {
+    padding-top: 22.5px;
+    gap: 30px;
+  }
+
+  .form__info-title {
+    font-size: 18.75px;
+    border-bottom-width: 1.5px;
+  }
+
+  .form__info-list {
+    gap: 37.5px;
+  }
+
+  .form__info-list li {
+    gap: 11.25px;
+  }
+
+  .form__info-list li div {
+    gap: 8.25px;
+    font-size: 21px;
+  }
+
+  .form__info-list li div img {
+    width: 22.5px;
+  }
+
+  .form__info-list li p {
+    font-size: 15px;
+  }
+}
+
+@media (max-width: 1100px) {
+  .lizing {
+    padding: 50px 0;
+  }
+
+  .lizing__title-block {
+    margin-bottom: 30px;
+  }
+
+  .lizing__inner {
+    gap: 40px;
+  }
+}
+
+@media (max-width: 800px) {
+  .lizing__inner {
+    flex-direction: column;
+  }
+
+  .lizing__func {
+    max-width: 100%;
+  }
+
+  .form__info-title {
+    margin: 0 auto;
+  }
+
+  .form__info {
+    padding-top: 0px;
+    gap: 30px;
+  }
+
+  .form__info-list li div {
+    justify-content: center;
+  }
+
+  .form__info-list li p {
+    text-align: center;
+  }
+}
+
+@media (max-width: 500px) {
+  .lizing__title-block h2 {
+    font-size: 40px;
+  }
+}
+
 /* ============================================= FORM ============================================= */
 /* ============================================= FORM ============================================= */
 /* ============================================= FORM ============================================= */
-.form {
+/* .form {
   padding: 50px 0;
   scroll-margin-top: -25px;
 }
@@ -1723,7 +2219,7 @@ body:has(.burger.active) {
     font-size: 15px;
     padding: 12px;
   }
-}
+} */
 
 /* ============================================= REALIZATION ============================================= */
 /* ============================================= REALIZATION ============================================= */
@@ -3227,7 +3723,7 @@ body:has(.burger.active) {
   }
 
   /* ============================== FORM ============================== */
-  .form {
+  /* .form {
     padding: 25px 0;
     scroll-margin-top: -12.5px;
   }
@@ -3289,7 +3785,7 @@ body:has(.burger.active) {
 
   .form__inner form {
     gap: 15px;
-  }
+  } */
 
   /* ============================== REALIZATION ============================== */
   .realization {
@@ -3758,6 +4254,14 @@ body:has(.about-popup.active) {
 
   .about-popup__text {
     gap: 8px;
+  }
+
+  .about-popup__text h2 {
+    font-size: 24px;
+  }
+
+  .about-popup__text p, .about-popup__text ul li {
+    font-size: 12px;
   }
 }
 
