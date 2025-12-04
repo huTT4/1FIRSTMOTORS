@@ -77,11 +77,6 @@ if (aboutPopup) {
 
   // Закрыть по оверлею
   aboutPopupOverlay.addEventListener('click', closePopup)
-
-  // Открыть сразу, если в URL хэш #about-popup
-  if (window.location.hash === '#about-popup') {
-    openPopup()
-  }
 }
 
 // ============================== Валидация формы ==============================

@@ -347,7 +347,7 @@ body:has(.burger.active) {
     left: 0;
     right: 0;
     z-index: -10;
-    padding: 100px 20px 60px;
+    padding: 100px 20px;
     background-color: #1d1d1d;
     border-radius: 0;
     opacity: 0;
@@ -355,12 +355,6 @@ body:has(.burger.active) {
     transition: .15s;
     display: flex;
     justify-content: space-between;
-  }
-
-  @media (max-height: 600px) {
-    .header__burger {
-      padding-bottom: 40px;
-    }
   }
 
   .header__burger.active {
@@ -390,6 +384,10 @@ body:has(.burger.active) {
 @media (max-height: 600px) {
   .header__nav {
     gap: 15px;
+  }
+
+  .header__burger {
+    padding-bottom: 60px;
   }
 }
 
@@ -3655,6 +3653,15 @@ body:has(.burger.active) {
   height: auto;
   max-height: 90vh;
   overflow-y: auto;
+}
+
+.about-popup__content::-webkit-scrollbar-thumb {
+  background-color: #ffba43bd;
+}
+
+.about-popup__content {
+  scrollbar-width: thin;
+  scrollbar-color: #ffba43bd transparent;
 }
 
 .about-popup__close {
