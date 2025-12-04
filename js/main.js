@@ -45,7 +45,7 @@ arrowToTop.addEventListener('click', function (e) {
 
 // ============================== Бургер - меню ==============================
 const burger = document.querySelector('.burger')
-const nav = document.querySelector('.header__burger')
+const nav = document.querySelector('.header__content')
 const burgerLinks = document.querySelectorAll('.header__nav a')
 
 burger.addEventListener('click', () => {
@@ -59,6 +59,31 @@ burgerLinks.forEach(link => {
     nav.classList.remove('active')
   })
 })
+
+// ============================== about-popup ==============================
+const aboutPopup = document.querySelector('.about-popup')
+const aboutPopupCloseBtn = document.querySelector('.about-popup__close')
+const aboutPopupOverlay = document.querySelector('.about-popup__overlay')
+const aboutPopupOpenButton = document.querySelector('[href="#about-popup"]')
+
+if (aboutPopup) {
+  const openPopup = () => aboutPopup.classList.add('active')
+  const closePopup = () => aboutPopup.classList.remove('active')
+
+  aboutPopupOpenButton.addEventListener('click', openPopup)
+
+  // Закрыть по крестику
+  aboutPopupCloseBtn.addEventListener('click', closePopup)
+
+  // Закрыть по оверлею
+  aboutPopupOverlay.addEventListener('click', closePopup)
+
+  // Открыть сразу, если в URL хэш #about-popup
+  if (window.location.hash === '#about-popup') {
+    openPopup()
+  }
+}
+
 
 // ============================== Валидация формы ==============================
 

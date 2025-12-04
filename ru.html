@@ -57,6 +57,35 @@
     <img src="img/arrow-to-top.png" alt="arrow-to-top">
   </button>
 
+  <div class="about-popup" role="dialog" aria-modal="true">
+    <div class="about-popup__overlay"></div>
+    <div class="about-popup__content container">
+      <button class="about-popup__close">
+        <img src="img/popup-close.png" alt="Закрыть попап">
+      </button>
+      <img src="img/pop-up-about-img.png" alt="">
+      <div class="about-popup__text">
+        <h2>О нас</h2>
+        <p>FirstMotors — это современный автосалон, предлагающий проверенные европейские автомобили с прозрачной
+          историей
+          и выгодными условиями покупки.</p>
+        <p>Мы предлагаем:</p>
+        <ul>
+          <li>* широкий выбор автомобилей в наличии;</li>
+          <li>* подбор любых моделей под заказ из Европы;</li>
+          <li>* честный и выгодный trade-in — ваш автомобиль в счёт оплаты нового;</li>
+          <li>* финансирование и лизинг через надёжных партнёров;</li>
+          <li>* полное сопровождение сделки: диагностика, доставка, оформление;</li>
+          <li>* продажу вашего авто через нашу площадку на профессиональных условиях.</li>
+        </ul>
+        <p>Мы работаем для тех, кто ценит качество, скорость и уверенность в каждой детали сделки.<br>
+          У нас нет скрытых условий — только честные цены, реальные автомобили и профессиональный подход.</p>
+        <p>Добро пожаловать в место, где автомобили выбирают так же тщательно, как люди выбирают стиль жизни.</p>
+        <p>Добро пожаловать в FirstMotors.</p>
+      </div>
+    </div>
+  </div>
+
   <header class="header">
     <div class="container">
       <div class="header__inner">
@@ -127,7 +156,12 @@
                 <button class="lang">
                   <img src="img/lang.svg" alt="lang">
                   RU
-                  <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 12 12" id="arrow-leng-white"><path d="M2.25 7.125a.375.375 0 01.642-.266L6 9.97 9.11 6.86a.377.377 0 11.532.532l-3.375 3.375a.374.374 0 01-.533 0L2.36 7.391a.375.375 0 01-.109-.266z" fill="#fff"/><path d="M5.625 10.5v-9a.375.375 0 01.75 0v9a.375.375 0 01-.75 0z" fill="#fff"/></svg>
+                  <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 12 12" id="arrow-leng-white">
+                    <path
+                      d="M2.25 7.125a.375.375 0 01.642-.266L6 9.97 9.11 6.86a.377.377 0 11.532.532l-3.375 3.375a.374.374 0 01-.533 0L2.36 7.391a.375.375 0 01-.109-.266z"
+                      fill="#fff" />
+                    <path d="M5.625 10.5v-9a.375.375 0 01.75 0v9a.375.375 0 01-.75 0z" fill="#fff" />
+                  </svg>
                 </button>
                 <div class="lang__list">
                   <a class="lang__list-link" href="index.html">LV</a>
@@ -162,7 +196,12 @@
             <button class="lang">
               <img src="img/lang.svg" alt="lang">
               RU
-              <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 12 12" id="arrow-leng-white"><path d="M2.25 7.125a.375.375 0 01.642-.266L6 9.97 9.11 6.86a.377.377 0 11.532.532l-3.375 3.375a.374.374 0 01-.533 0L2.36 7.391a.375.375 0 01-.109-.266z" fill="#fff"/><path d="M5.625 10.5v-9a.375.375 0 01.75 0v9a.375.375 0 01-.75 0z" fill="#fff"/></svg>
+              <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 12 12" id="arrow-leng-white">
+                <path
+                  d="M2.25 7.125a.375.375 0 01.642-.266L6 9.97 9.11 6.86a.377.377 0 11.532.532l-3.375 3.375a.374.374 0 01-.533 0L2.36 7.391a.375.375 0 01-.109-.266z"
+                  fill="#fff" />
+                <path d="M5.625 10.5v-9a.375.375 0 01.75 0v9a.375.375 0 01-.75 0z" fill="#fff" />
+              </svg>
             </button>
             <div class="lang__list">
               <a class="lang__list-link" href="index.html">LV</a>
@@ -234,7 +273,7 @@
           <h1 class="hero__title">Будь первым, выбирай <span>First Motors.</span></h1>
           <h2 class="hero__subtitle">Покупка, продажда подержанных автомобилей. Авто лизинг.</h2>
           <div class="hero__btns">
-            <a class="hero__btn-1" href="#about">
+            <a class="hero__btn-1" href="#about-popup">
               О нас
               <svg width="19" height="19" viewBox="0 0 19 19" fill="none" xmlns="http://www.w3.org/2000/svg">
                 <g clip-path="url(#clip0_4_335)">
