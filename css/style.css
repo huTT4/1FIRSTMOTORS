@@ -1915,8 +1915,99 @@ body:has(.burger.active) {
 }
 
 @media (max-width: 500px) {
+  .lizing__title-block {
+    margin-bottom: 20px;
+    gap: 5px;
+  }
+
   .lizing__title-block h2 {
     font-size: 40px;
+  }
+
+  .lizing__title-block p {
+    font-size: 16px;
+  }
+
+  .lizing__func-title {
+    font-size: 24px;
+  }
+
+  .lizing__calc-title {
+    font-size: 16px;
+  }
+
+  .lizing__calc-num {
+    font-size: 18px;
+  }
+
+  .lizing__calc-block {
+    gap: 12px;
+  }
+
+  .lizing__calc-end .lizing__calc-num {
+    gap: 5px;
+    padding: 15px 7.5px 15px 15px;
+  }
+
+  .lizing__func {
+    padding: 25px;
+  }
+
+  .form__inputs input, .form__inputs textarea {
+    padding: 15px;
+    font-size: 15px;
+  }
+
+  .form__inputs {
+    gap: 7.5px;
+    margin-bottom: 15px;
+  }
+
+  .form__checkbox {
+    font-size: 14px;
+    margin-bottom: 15px;
+  }
+
+  .form__btn {
+    font-size: 15px;
+    padding: 15px;
+  }
+
+  .lizing__inner {
+    gap: 30px;
+  }
+
+  .form__info-title {
+    font-size: 22px;
+  }
+
+  .form__info {
+    gap: 15px;
+  }
+
+  .form__info-list li div {
+    gap: 8px;
+    font-size: 20px;
+  }
+
+  .form__info-list li div img {
+    width: 25px;
+  }
+
+  .form__info-list li {
+    gap: 7.5px;
+  }
+
+  .form__info-list li p {
+    font-size: 16px;
+  }
+
+  .form__info-list {
+    gap: 30px;
+  }
+
+  .lizing {
+    padding: 40px 0;
   }
 }
 
