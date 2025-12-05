@@ -97,8 +97,9 @@ body {
 
 .header__content-text div {
   display: flex;
-  flex-direction: column;
-  gap: 5px;
+  /* flex-direction: column; */
+  /* gap: 5px; */
+  gap: 15px;
 }
 
 .header.bg {
@@ -1115,7 +1116,7 @@ body:has(.burger.active) {
 }
 
 .catalog__card-img-info-new::before {
-  background: #1440cf !important;
+  background: #000 !important;
 }
 
 .catalog__card-img-info-discount::before {
@@ -1157,7 +1158,7 @@ body:has(.burger.active) {
 .catalog__card-title h5 {
   font-weight: 800;
   font-size: 21px;
-  color: #ffb835;
+  color: #000;
 }
 
 .catalog__card-info {
@@ -1438,24 +1439,27 @@ body:has(.burger.active) {
   flex-direction: column;
   align-items: center;
   gap: 10px;
-  margin-bottom: 50px;
+  margin-bottom: 40px;
 }
 
 .lizing__title-block h2 {
-  font-weight: 800;
+  font-weight: 900;
   font-size: 50px;
   text-transform: uppercase;
   color: #fff;
 }
 
 .lizing__title-block h2 span {
-  color: #ffb835;
+  background: linear-gradient(180deg, #ffb835 0%, #ffbf4a 100%);
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
 }
 
 .lizing__title-block p {
   font-style: italic;
   font-weight: 800;
-  font-size: 22px;
+  font-size: 20px;
   color: #fff;
 }
 
@@ -1476,7 +1480,7 @@ body:has(.burger.active) {
 
 .lizing__func-title {
   font-weight: 700;
-  font-size: 30px;
+  font-size: 20px;
   color: #fff;
 }
 
@@ -1501,13 +1505,13 @@ body:has(.burger.active) {
 
 .lizing__calc-title {
   font-weight: 600;
-  font-size: 18px;
+  font-size: 16px;
   color: #fff;
 }
 
 .lizing__calc-num {
   font-weight: 700;
-  font-size: 22px;
+  font-size: 20px;
   color: #fff;
 }
 
@@ -1630,8 +1634,9 @@ body:has(.burger.active) {
 .form__checkbox-checkmark {
   position: relative;
   display: inline-block;
-  width: 21px;
+  max-width: 21px;
   height: 21px;
+  width: 100%;
   border: 2px solid #fff;
 }
 
@@ -1658,7 +1663,7 @@ body:has(.burger.active) {
 
 .form__btn {
   font-weight: 600;
-  font-size: 17px;
+  font-size: 18px;
   color: #fff;
   border: 1px solid rgba(0, 0, 0, 0.05);
   border-radius: 10px;
@@ -1682,12 +1687,18 @@ body:has(.burger.active) {
   padding-top: 30px;
   display: flex;
   flex-direction: column;
-  gap: 40px;
+  gap: 30px;
+}
+
+.form__info-block {
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
 }
 
 .form__info-title {
   font-weight: 700;
-  font-size: 25px;
+  font-size: 20px;
   color: #fff;
   border-bottom: 2px solid #ffb835;
   width: fit-content;
@@ -1696,33 +1707,38 @@ body:has(.burger.active) {
 .form__info-list {
   display: flex;
   flex-direction: column;
-  gap: 50px;
+  gap: 40px;
 }
 
 .form__info-list li {
   display: flex;
   flex-direction: column;
-  gap: 15px;
+  gap: 10px;
 }
 
 .form__info-list li div {
   display: flex;
   align-items: center;
-  gap: 11px;
+  gap: 8px;
   font-weight: 700;
-  font-size: 28px;
+  font-size: 20px;
   color: #fff;
 }
 
 .form__info-list li div img {
-  width: 30px;
+  width: 25px;
 }
 
-.form__info-list li p {
+.form__info-list li p,
+.form__info-text {
   font-weight: 400;
-  font-size: 20px;
+  font-size: 16px;
   color: #fff;
   max-width: 550px;
+}
+
+.form__info-text {
+  max-width: 750px;
 }
 
 @media ((min-width: 1100px) and (max-width: 1550px)) {
@@ -1732,7 +1748,7 @@ body:has(.burger.active) {
 
   .lizing__title-block {
     gap: 7.5px;
-    margin-bottom: 37.5px;
+    margin-bottom: 30px;
   }
 
   .lizing__title-block h2 {
@@ -1740,7 +1756,7 @@ body:has(.burger.active) {
   }
 
   .lizing__title-block p {
-    font-size: 16.5px;
+    font-size: 15px;
   }
 
   .lizing__inner {
@@ -1755,7 +1771,7 @@ body:has(.burger.active) {
   }
 
   .lizing__func-title {
-    font-size: 22.5px;
+    font-size: 15px;
   }
 
   .lizing__calc {
@@ -1767,11 +1783,11 @@ body:has(.burger.active) {
   }
 
   .lizing__calc-title {
-    font-size: 13.5px;
+    font-size: 12px;
   }
 
   .lizing__calc-num {
-    font-size: 16.5px;
+    font-size: 15px;
   }
 
   .lizing__calc-end .lizing__calc-num {
@@ -1830,47 +1846,56 @@ body:has(.burger.active) {
   }
 
   .form__checkbox-checkmark {
-    width: 15.75px;
+    max-width: 15.75px;
     height: 15.75px;
     border-width: 1.5px;
   }
 
   .form__btn {
-    font-size: 12.75px;
+    font-size: 13.5px;
     border-radius: 7.5px;
     padding: 18.5px;
   }
 
   .form__info {
     padding-top: 22.5px;
-    gap: 30px;
+    gap: 22.5px;
+  }
+
+  .form__info-block {
+    gap: 22.5px;
   }
 
   .form__info-title {
-    font-size: 18.75px;
+    font-size: 15px;
     border-bottom-width: 1.5px;
   }
 
   .form__info-list {
-    gap: 37.5px;
+    gap: 30px;
   }
 
   .form__info-list li {
-    gap: 11.25px;
+    gap: 7.5px;
   }
 
   .form__info-list li div {
-    gap: 8.25px;
-    font-size: 21px;
+    gap: 6px;
+    font-size: 15px;
   }
 
   .form__info-list li div img {
-    width: 22.5px;
+    width: 18.75px;
   }
 
-  .form__info-list li p {
-    font-size: 15px;
+  .form__info-list li p,
+  .form__info-text {
+    font-size: 12px;
     max-width: 412.5px;
+  }
+
+  .form__info-text {
+    max-width: 562.5px;
   }
 }
 
@@ -1906,11 +1931,24 @@ body:has(.burger.active) {
     gap: 30px;
   }
 
+  .form__info-block {
+    gap: 30px;
+  }
+
+  .form__info-list li {
+    align-items: center;
+  }
+
   .form__info-list li div {
     justify-content: center;
   }
 
-  .form__info-list li p {
+  .form__info-block {
+    align-items: center;
+  }
+
+  .form__info-list li p,
+  .form__info-text {
     text-align: center;
   }
 }
@@ -1927,18 +1965,6 @@ body:has(.burger.active) {
 
   .lizing__title-block p {
     font-size: 16px;
-  }
-
-  .lizing__func-title {
-    font-size: 24px;
-  }
-
-  .lizing__calc-title {
-    font-size: 16px;
-  }
-
-  .lizing__calc-num {
-    font-size: 18px;
   }
 
   .lizing__calc-block {
@@ -1970,7 +1996,7 @@ body:has(.burger.active) {
   }
 
   .form__btn {
-    font-size: 15px;
+    font-size: 16px;
     padding: 15px;
   }
 
@@ -1978,29 +2004,20 @@ body:has(.burger.active) {
     gap: 30px;
   }
 
-  .form__info-title {
-    font-size: 22px;
+  .form__info {
+    gap: 15px;
   }
 
-  .form__info {
+  .form__info-block {
     gap: 15px;
   }
 
   .form__info-list li div {
     gap: 8px;
-    font-size: 20px;
-  }
-
-  .form__info-list li div img {
-    width: 25px;
   }
 
   .form__info-list li {
     gap: 7.5px;
-  }
-
-  .form__info-list li p {
-    font-size: 16px;
   }
 
   .form__info-list {
@@ -4229,7 +4246,7 @@ body:has(.burger.active) {
   width: 100%;
   display: none;
   z-index: 99999;
-  background-color: #f2f2f2;
+  background-color: #fff;
   border-radius: 15px;
   padding: 28px 85px 30px;
   position: fixed;
@@ -4273,6 +4290,11 @@ body:has(.burger.active) {
   height: 100%;
 }
 
+.about-popup__img {
+  width: 250px;
+  background: #000;
+}
+
 .about-popup__text {
   display: flex;
   flex-direction: column;
@@ -4289,7 +4311,7 @@ body:has(.burger.active) {
 .about-popup__text p,
 .about-popup__text ul li {
   font-weight: 400;
-  font-size: 13px;
+  font-size: 16px;
   line-height: 130%;
   color: #2a2a2a;
 }
@@ -4317,6 +4339,10 @@ body:has(.about-popup.active) {
     height: 17.25px;
   }
 
+  .about-popup__img {
+    width: 187.5px;
+  }
+
   .about-popup__text {
     gap: 9.75px;
   }
@@ -4327,7 +4353,7 @@ body:has(.about-popup.active) {
 
   .about-popup__text p,
   .about-popup__text ul li {
-    font-size: 9.75px;
+    font-size: 12px;
   }
 }
 
@@ -4338,10 +4364,20 @@ body:has(.about-popup.active) {
   }
 }
 
+@media (max-width: 650px) {
+  .about-popup__content {
+    padding: 25px 35px;
+  }
+}
+
 @media (max-width: 500px) {
   .about-popup__content {
     padding: 30px;
     gap: 10px;
+  }
+
+  .about-popup__img {
+    width: 200px;
   }
 
   .about-popup__text {
@@ -4353,7 +4389,7 @@ body:has(.about-popup.active) {
   }
 
   .about-popup__text p, .about-popup__text ul li {
-    font-size: 12px;
+    font-size: 14px;
   }
 }
 
