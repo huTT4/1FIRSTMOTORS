@@ -1505,7 +1505,7 @@ body:has(.burger.active) {
 
 .lizing__calc-title {
   font-weight: 600;
-  font-size: 16px;
+  font-size: 17px;
   color: #fff;
 }
 
@@ -1698,7 +1698,7 @@ body:has(.burger.active) {
 
 .form__info-title {
   font-weight: 700;
-  font-size: 20px;
+  font-size: 22px;
   color: #fff;
   border-bottom: 2px solid #ffb835;
   width: fit-content;
@@ -1732,7 +1732,7 @@ body:has(.burger.active) {
 .form__info-list li p,
 .form__info-text {
   font-weight: 400;
-  font-size: 16px;
+  font-size: 17px;
   color: #fff;
   max-width: 550px;
 }
@@ -1783,7 +1783,7 @@ body:has(.burger.active) {
   }
 
   .lizing__calc-title {
-    font-size: 12px;
+    font-size: 12.75px;
   }
 
   .lizing__calc-num {
@@ -1867,7 +1867,7 @@ body:has(.burger.active) {
   }
 
   .form__info-title {
-    font-size: 15px;
+    font-size: 16.5px;
     border-bottom-width: 1.5px;
   }
 
@@ -1890,7 +1890,7 @@ body:has(.burger.active) {
 
   .form__info-list li p,
   .form__info-text {
-    font-size: 12px;
+    font-size: 12.75px;
     max-width: 412.5px;
   }
 
@@ -4306,6 +4306,8 @@ body:has(.burger.active) {
   line-height: 110%;
   font-size: 34px;
   color: #2a2a2a;
+  border-bottom: 2px solid #ffb835;
+  width: fit-content;
 }
 
 .about-popup__text p,
