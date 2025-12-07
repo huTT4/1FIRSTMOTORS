@@ -112,7 +112,7 @@ calcBlocks.forEach(block => {
     range.style.setProperty('--pos', percent + '%');
 
     // Передаем значения в общие переменные
-    if (range.max == '100000') {
+    if (range.max == '50000') {
       amount = Number(range.value)
     } else {
       term = Number(range.value)
