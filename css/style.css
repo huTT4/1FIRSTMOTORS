@@ -1922,10 +1922,6 @@ body:has(.burger.active) {
     max-width: 100%;
   }
 
-  .form__info-title {
-    margin: 0 auto;
-  }
-
   .form__info {
     padding-top: 0px;
     gap: 30px;
@@ -1933,23 +1929,6 @@ body:has(.burger.active) {
 
   .form__info-block {
     gap: 30px;
-  }
-
-  .form__info-list li {
-    align-items: center;
-  }
-
-  .form__info-list li div {
-    justify-content: center;
-  }
-
-  .form__info-block {
-    align-items: center;
-  }
-
-  .form__info-list li p,
-  .form__info-text {
-    text-align: center;
   }
 }
 
